@@ -36,9 +36,21 @@ module.exports = {
 
 ```
 
-引入Vux
-``` javascript
+引入Vux (Vux需要Vuex)
+``` shell
+npm install vuex
+npm install vuex-i18n
+npm install vux
+npm install vux-loader --only=dev
+```
+Vux2必须配合vux-loader使用, 请在build/webpack.base.conf.js里参照如下代码进行配置：
+```javascript
+const vuxLoader = require('vux-loader')
+const webpackConfig = originalConfig // 原来的 module.exports 代码赋值给变量 webpackConfig
 
+module.exports = vuxLoader.merge(webpackConfig, {
+  plugins: ['vux-ui']
+})
 ```
 
 Reset 默认测试时样式

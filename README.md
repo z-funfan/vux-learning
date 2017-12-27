@@ -106,7 +106,7 @@ module.exports = vuxLoader.merge(webpackConfig, {
 }
 ```
 1. 配置webpack.dev.conf.js
-``` jacascript
+``` javascript
 // Configurations for mock data
 const express = require('express')
 const app = express()
@@ -143,7 +143,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 ...
 }
 ```
-
 1. 上述配置完成之后，应该就可以直接用router访问数据了，比如。`http://localhost:8080/api/pointdetail/all`
 1. 然后，可以在组件里用axios或者Vux AjaxPlugin调用，这里用Vux AjaxPlugin举例
 引入Vux AjaxPlugin （手工引入）

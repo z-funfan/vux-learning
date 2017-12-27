@@ -236,4 +236,8 @@ Project
 
 ### Vue.js
 ### Css 样式
+
+## 其他
+Visual Studio Code, 同步配置 Sync 插件
+`Sync : Upload Complete. GIST ID : d4fb9736ed5cc83cb779976506609767 . Please copy and use this ID in other machines to download settings.`
        

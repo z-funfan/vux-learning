@@ -6,28 +6,28 @@
 
 <script>
 // import { AjaxPlugin } from 'vux'
-import AjaxPlugin from 'vux/src/plugins/ajax/index'
-import Vue from 'vue'
-Vue.use(AjaxPlugin)
+import AjaxPlugin from "vux/src/plugins/ajax/index";
+import Vue from "vue";
+Vue.use(AjaxPlugin);
 
 export default {
-  name: 'HelloWorld',
-  data () {
+  name: "HelloWorld",
+  data() {
     return {
-      msg: 'HelloWorld'
-    }
+      msg: "HelloWorld"
+    };
   },
-  created () {
-    this.$http.get('/api/pointdetail/all').then(
+  created() {
+    this.$http.get("/api/pointdetail/all").then(
       response => {
-        console.log(response)
+        console.log(response);
       },
       response => {
-        console.log('数据加载失败')
+        console.log("数据加载失败");
       }
-    )
+    );
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

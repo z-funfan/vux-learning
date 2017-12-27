@@ -61,6 +61,12 @@ const devWebpackConfig = merge(baseWebpackConfig, {
                     data: appData.point_detail_all
                 })
             })
+            app.get('/api/member', (req, res) => {
+                res.json({
+                    errno: 0,
+                    data: appData.member
+                })
+            })
         }
     },
     plugins: [
@@ -87,7 +93,7 @@ module.exports = new Promise((resolve, reject) => {
         } else {
             // publish the new Port, necessary for e2e tests
             process.env.PORT = port
-                // add port to devServer config
+            // add port to devServer config
             devWebpackConfig.devServer.port = port
 
             // Add FriendlyErrorsPlugin

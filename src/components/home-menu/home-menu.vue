@@ -1,33 +1,33 @@
 <template>
   <div class="home-action">   
     <grid :cols="3">
-      <grid-item label="优惠券" link="/coupon">
-        <span slot="icon" class="mf mf-coupon home-action-icon"/>
-      </grid-item>
-      <grid-item label="积分详情" link="/point">
-        <span slot="icon" class="mf mf-point home-action-icon"/>
-      </grid-item>
-      <grid-item label="储值详情">
-        <span slot="icon" class="mf mf-prepaid home-action-icon"/>
-      </grid-item>
-      <grid-item label="消费详情">
-        <span slot="icon" class="mf mf-purchase home-action-icon"/>
-      </grid-item>
-      <grid-item label="个人信息" link="/memberdetail">
-        <span slot="icon" class="mf mf-preson home-action-icon"/> 
-      </grid-item>
-      <grid-item label="会员权益">
-        <span slot="icon" class="mf mf-member-care home-action-icon"/> 
-      </grid-item>
-      <grid-item label="投诉建议">
-        <span slot="icon" class="mf mf-complain home-action-icon"/> 
-      </grid-item>
-      <grid-item label="解除绑定">
-        <span slot="icon" class="mf mf-remove-binding home-action-icon"/> 
-      </grid-item>
-      <grid-item label="联系我们">
-        <span slot="icon" class="mf mf-contact-us home-action-icon"/> 
-      </grid-item>  
+   <grid-item label="优惠券" :link="'/coupon/' + userId"  >
+      <span slot="icon" class="mf mf-coupon home-action-icon"/>
+    </grid-item>
+    <grid-item label="积分详情" :link="'/point/' + userId">
+      <span slot="icon" class="mf mf-point home-action-icon"/>
+    </grid-item>
+    <grid-item label="储值详情" :link="'/account/' + userId">
+      <span slot="icon" class="mf mf-prepaid home-action-icon"/>
+    </grid-item>
+    <grid-item label="消费详情" :link="'/consume/' + userId">
+      <span slot="icon" class="mf mf-purchase home-action-icon"/>
+    </grid-item>
+    <grid-item label="个人信息" :link="'/member/' + userId">
+      <span slot="icon" class="mf mf-preson home-action-icon"/> 
+    </grid-item>
+    <grid-item label="会员权益" :link="'/rights/' + userId">
+      <span slot="icon" class="mf mf-member-care home-action-icon"/> 
+    </grid-item>
+    <grid-item label="投诉建议" :link="'/suggestion/' + userId">
+      <span slot="icon" class="mf mf-complain home-action-icon"/> 
+    </grid-item>
+    <grid-item label="解除绑定" :link="'/unbind/' + userId">
+      <span slot="icon" class="mf mf-remove-binding home-action-icon"/> 
+    </grid-item>
+    <grid-item label="联系我们">
+      <span slot="icon" class="mf mf-contact-us home-action-icon"/> 
+    </grid-item>
     </grid>
   </div>
 </template>
@@ -43,9 +43,14 @@ export default {
     GridItem
   },
   data() {
-    return {};
+    return {
+      userId: String
+    };
   },
-  created() {}
+  created() {
+    // mock
+    this.userId = 'test_user';
+  }
 };
 </script>
 

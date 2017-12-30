@@ -240,4 +240,24 @@ Project
 ## 其他
 Visual Studio Code, 同步配置 Sync 插件
 `Sync : Upload Complete. GIST ID : d4fb9736ed5cc83cb779976506609767 . Please copy and use this ID in other machines to download settings.`
+
+#### Vue-infinite-loading
+Vux宣称不在维护Scroller组件，也不建议使用，建议使用第三方组件
+因此为了使用下拉刷新组件，我找了另一个Star比较高的下拉刷新组建
+[vue-infinite-loading](https://github.com/PeachScript/vue-infinite-loading)
+官网： https://peachscript.github.io/vue-infinite-loading/
+
+``` shell
+npm install vue-infinite-loading --save
+```
+
+``` javascript
+import InfiniteLoading from 'vue-infinite-loading';
+
+export default {
+  components: {
+    InfiniteLoading,
+  },
+};
+```
        

@@ -43,30 +43,36 @@ const devWebpackConfig = merge(baseWebpackConfig, {
         },
         // Mock REST api in project
         before(app) {
+            app.get('/api/point', (req, res) => {
+                res.json({
+                    errno: 0,
+                    data: appData.current_points
+                })
+            });
             app.get('/api/pointdetail/top10', (req, res) => {
                 res.json({
                     errno: 0,
                     data: appData.point_detail_top10
                 })
-            })
+            });
             app.get('/api/pointdetail/month', (req, res) => {
                 res.json({
                     errno: 0,
                     data: appData.point_detail_month
                 })
-            })
+            });
             app.get('/api/pointdetail/all', (req, res) => {
                 res.json({
                     errno: 0,
                     data: appData.point_detail_all
                 })
-            })
+            });
             app.get('/api/member', (req, res) => {
                 res.json({
                     errno: 0,
                     data: appData.member
                 })
-            })
+            });
         }
     },
     plugins: [

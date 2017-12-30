@@ -1,12 +1,12 @@
 {
     "member": {
-        "memberName": "彭俊琦",
+        "memberName": "张某某",
         "memberLevel": "金卡",
         "memberCard": "1100005000024",
         "avatar": "http://wx.qlogo.cn/mmopen/PL5y7QQHZgLrI13pR0sqJrOU7dK6noqCX9TvXJkM2N0xKUcdKDxTJwHiasmluzWWic8j131fLFdXWWQPnYjAwVJVFehHGjTG6Y/0"
     },
-    "point_detail_top10": {
-        "current_points": 2550,
+    "current_points":2550,
+    "point_detail_month": {
         "point_records": [
             {
                 "title": "注册有礼",
@@ -135,8 +135,7 @@
             }
         ]
     },
-    "point_detail_month": {
-        "current_points": 2550,
+    "point_detail_top10": {
         "point_records": [
             {
                 "title": "注册有礼",
@@ -191,7 +190,6 @@
         ]
     },
     "point_detail_all": {
-        "current_points": 2550,
         "point_records": [
             {
                 "title": "注册有礼",

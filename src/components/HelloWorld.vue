@@ -23,7 +23,7 @@ export default {
         console.log(response);
       },
       response => {
-        console.log("数据加载失败");
+        console.error("数据加载失败");
       }
     );
   }

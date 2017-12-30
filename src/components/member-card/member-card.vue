@@ -58,7 +58,7 @@ export default {
         this.member = response.data.data;
       },
       response => {
-        console.log("数据加载失败");
+        console.error("数据加载失败");
       }
     );
   },

@@ -23,12 +23,7 @@ export default {
 };
 </script>
 
-<style lang='less'>
-a {
-  color: #7e8c8d;
-  text-decoration: none;
-  backface-visibility: hidden;
-}
+<style lang='less' scoped>
 .member-home {
   .home-content {
     background-image: url("../assets/img/homebak.jpg");
